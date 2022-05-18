@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class HighlightableRoundedButton: UIButton {
+public final class HighlightableRoundedButton: UIButton {
     
     // MARK: Properties
     
@@ -36,7 +36,7 @@ final class HighlightableRoundedButton: UIButton {
         }
     }
 
-    override var isHighlighted: Bool {
+    public override var isHighlighted: Bool {
         didSet {
             updateColors()
         }
@@ -62,7 +62,7 @@ final class HighlightableRoundedButton: UIButton {
         setTitleColor(titleColor, for: .normal)
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = frame.height / 2
     }

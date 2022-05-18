@@ -224,7 +224,7 @@ public final class AHDownloadButton: UIView {
 
     // MARK: Private properties
     
-    let startDownloadButton: HighlightableRoundedButton = {
+    public let startDownloadButton: HighlightableRoundedButton = {
         let button = HighlightableRoundedButton()
         button.addTarget(self, action: #selector(currentButtonTapped), for: .touchUpInside)
         return button
